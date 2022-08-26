@@ -41,7 +41,31 @@ body{
 .baixo img{
     padding: 18px;
 }
-input{
-    
-    
+
+.mensagem-cinza{
+    background-color:#DCDCDC ;
+    margin-bottom: 4px;
+    height: 40px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+.mensagem-branca{
+    background-color:#FFFFFF ;
+    margin-bottom: 4px;
+    height: 40px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+.mensagem-rosa{
+    background-color:#FFDEDE ;
+    margin-bottom: 4px;
+    height: 40px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
 }
