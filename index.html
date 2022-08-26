@@ -21,21 +21,9 @@
     <main>
         <div class="container">
             <ul>
-                <li>
-                    <div class="mensagem-cinza">
-                        <span class="hora"></span> <span class="nome"> </span ><span class="type"></span>
-                    </div>
-                </li>
-                <li>
-                    <div class="mensagem-branca">
-                        
-                    </div>
-                </li>
-                <li>
-                    <div class="mensagem-rosa">
-                        
-                    </div>
-                </li>
+                
+                
+                
             </ul>
         </div>
     </main>
@@ -43,11 +31,18 @@
     <footer>
         <div class="baixo">
             <div class="escrita">
-                <input type="text">
+                <input class="escrever"type="text" placeholder="Escreva aqui...">
             </div>
-            <img src="./imagens/Enviar.png" alt="">
+            <ion-icon class="mandar-mensagem"name="paper-plane-outline" onclick="mandarMensagem()"></ion-icon>
         </div>
     </footer>
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
