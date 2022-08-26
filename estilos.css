@@ -47,34 +47,53 @@ body{
 .status{
     background-color:#DCDCDC ;
     margin-bottom: 4px;
-    height: 40px;
-    font-size: 14px;
+    height: auto;
+    font-size: 18px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding-left: 8px;
-    width: 375px;
+    width:375px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-family: 'Roboto';
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .message{
+    width:375px;
     background-color:#FFFFFF ;
     margin-bottom: 4px;
-    height: 40px;
-    font-size: 14px;
+    height: auto;
+    font-size: 18px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding-left: 8px;
-    max-width: 375px;
-    overflow: hidden;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    margin-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
 }
 .private_message{
     background-color:#FFDEDE ;
     margin-bottom: 4px;
-    height: 40px;
-    font-size: 14px;
+    height: auto;
+    font-size: 18px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding-left: 8px;
-    width: 375px;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    margin-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:375px;
 }
+
 .hora, .nome{
     margin-right: 5px;
 }
@@ -84,6 +103,7 @@ body{
 
 input{
     border: 0px ;
+    font-size: 18px;
 }
 
 input:focus{

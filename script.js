@@ -9,15 +9,11 @@ let participantes = {
 }
 let arr = []
 
-
-
-
-
-
 function mandarMensagem() {
 
     
-    const input = document.querySelector('.escrever').value
+    let input = document.querySelector('.escrever').value
+    
     let participantes = {
         from: nomePessoa.name,
         to: "Todos",
@@ -27,7 +23,7 @@ function mandarMensagem() {
     let promessa = axios.post('https://mock-api.driven.com.br/api/v6/uol/messages', participantes)
     promessa.then(inutil)
 
-    input = ""
+    document.querySelector('.escrever').value = ""
 
 }
 
@@ -66,14 +62,17 @@ function pessoaEntrou(response) {
     let chegadaPessoa = document.querySelector('ul')
 
     for (i = 0; i < arr.length; i++) {
-        
+
         if (i === 0) {
             chegadaPessoa.innerHTML = ""
         }
         
         let mensagem = `<li>
         <div class="${arr[i].type}" id="mensagem${i}">
-            <span class="hora">${arr[i].time}</span> <span class="nome">${arr[i].from}</span ><span class="type">${arr[i].text}</span>
+        <p> 
+        <span class="hora">${arr[i].time}</span> <span class="nome">${arr[i].from}</span ><span class="type">${arr[i].text}</span>
+        </p>
+        
         </div>
     </li>`
 
