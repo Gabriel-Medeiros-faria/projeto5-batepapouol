@@ -22,7 +22,7 @@ function mandarMensagem() {
     }
     let promessa = axios.post('https://mock-api.driven.com.br/api/v6/uol/messages', participantes)
     promessa.then(inutil)
-
+    promessa.catch(tratarErro)
     document.querySelector('.escrever').value = ""
 
 }
@@ -51,7 +51,7 @@ function pegarMensagem() {
 pegarMensagem()
 
 
-setInterval(pegarMensagem, 5000)
+setInterval(pegarMensagem, 3000)
 
 setInterval(seEstiverPresente, 5000)
 
@@ -84,3 +84,9 @@ function pessoaEntrou(response) {
 }
 
 
+function tratarErro(erro){
+    
+        while(erro === 400){
+            alert("Esse usuário ja existe digite outro")
+        }
+}
